@@ -34,6 +34,7 @@ services:
     container_name: jbc-consensus
     image: sigp/lighthouse
     user: root
+    restart: always
     volumes:
       - ./data/lighthouse:/root/.lighthouse
       - ./config:/config
